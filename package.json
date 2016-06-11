@@ -6,7 +6,7 @@
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "exemplator-plugin:toggle"
+    "atom-workspace": "exemplator-plugin:showExamples"
   },
   "repository": "https://github.com/atom/exemplator-plugin",
   "license": "MIT",
