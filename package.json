@@ -1,0 +1,18 @@
+{
+  "name": "exemplator-plugin",
+  "main": "./lib/exemplator-plugin",
+  "version": "0.0.0",
+  "description": "Created during Inno{Hacks}",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "exemplator-plugin:toggle"
+  },
+  "repository": "https://github.com/atom/exemplator-plugin",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
