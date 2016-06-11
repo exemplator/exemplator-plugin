@@ -1,5 +1,6 @@
 {
   "atom-workspace": {
-    "cmd-shift-e": "exemplator-plugin:showExamples"
+    "cmd-shift-e": "exemplator-plugin:showExamples",
+    "cmd-shift-t": "exemplator-plugin:toggle"
   }
 }

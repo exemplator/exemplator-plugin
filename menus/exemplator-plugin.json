@@ -4,6 +4,10 @@
       {
         "label": "Toggle exemplator-plugin",
         "command": "exemplator-plugin:toggle"
+      },
+      {
+        "label": "Show exemplator-plugin",
+        "command": "exemplator-plugin:showExamples"
       }
     ]
   },
