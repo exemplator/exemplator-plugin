@@ -2,12 +2,12 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle exemplator-plugin",
-        "command": "exemplator-plugin:toggle"
+        "label": "Toggle Exemplator",
+        "command": "Exemplator:toggle"
       },
       {
-        "label": "Show exemplator-plugin",
-        "command": "exemplator-plugin:showExamples"
+        "label": "Show Exemplator",
+        "command": "Exemplator:showExamples"
       }
     ]
   },
@@ -16,17 +16,16 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "exemplator-plugin",
+          "label": "Exemplator",
           "submenu": [
             {
               "label": "Toggle",
-              "command": "exemplator-plugin:toggle"
+              "command": "Exemplator:toggle"
             },
             {
               "label": "Examples",
-              "command": "exemplator-plugin:showExamples"
+              "command": "Exemplator:showExamples"
             }
-
           ]
         }
       ]

@@ -1,4 +1,4 @@
-# exemplator-plugin package
+# Exemplator package
 
 A short description of your package.
 

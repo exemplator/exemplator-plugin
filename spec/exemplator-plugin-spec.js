@@ -12,32 +12,32 @@ describe('ExemplatorPlugin', () => {
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('exemplator-plugin');
+    activationPromise = atom.packages.activatePackage('Exemplator');
   });
 
-  describe('when the exemplator-plugin:toggle event is triggered', () => {
+  describe('when the Exemplator:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.exemplator-plugin')).not.toExist();
+      expect(workspaceElement.querySelector('.Exemplator')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'exemplator-plugin:toggle');
+      atom.commands.dispatch(workspaceElement, 'Exemplator:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.exemplator-plugin')).toExist();
+        expect(workspaceElement.querySelector('.Exemplator')).toExist();
 
-        let exemplatorPluginElement = workspaceElement.querySelector('.exemplator-plugin');
+        let exemplatorPluginElement = workspaceElement.querySelector('.Exemplator');
         expect(exemplatorPluginElement).toExist();
 
         let exemplatorPluginPanel = atom.workspace.panelForItem(exemplatorPluginElement);
         expect(exemplatorPluginPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'exemplator-plugin:toggle');
+        atom.commands.dispatch(workspaceElement, 'Exemplator:toggle');
         expect(exemplatorPluginPanel.isVisible()).toBe(false);
       });
     });
@@ -51,11 +51,11 @@ describe('ExemplatorPlugin', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.exemplator-plugin')).not.toExist();
+      expect(workspaceElement.querySelector('.Exemplator')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'exemplator-plugin:toggle');
+      atom.commands.dispatch(workspaceElement, 'Exemplator:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,9 +63,9 @@ describe('ExemplatorPlugin', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let exemplatorPluginElement = workspaceElement.querySelector('.exemplator-plugin');
+        let exemplatorPluginElement = workspaceElement.querySelector('.Exemplator');
         expect(exemplatorPluginElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'exemplator-plugin:toggle');
+        atom.commands.dispatch(workspaceElement, 'Exemplator:toggle');
         expect(exemplatorPluginElement).not.toBeVisible();
       });
     });

@@ -1,20 +1,22 @@
 {
-  "name": "exemplator-plugin",
+  "name": "Exemplator",
   "main": "./lib/exemplator-plugin",
   "version": "0.0.0",
   "description": "Created during Inno{Hacks}",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
-    "atom-workspace": "exemplator-plugin:showExamples"
+    "atom-workspace": "Exemplator:showExamples"
   },
-  "repository": "https://github.com/atom/exemplator-plugin",
+  "repository": "https://github.com/exemplator/exemplator-plugin",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "atom-space-pen-views": "^2.0.3",
     "handlebars": "^4.0.5",
+    "highlight.js": "^9.4.0",
+    "highlights": "^1.3.1",
     "loophole": "^1.1.0"
   }
 }
