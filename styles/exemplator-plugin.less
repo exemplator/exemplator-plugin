@@ -78,110 +78,136 @@
     float: right;
   }
 
-  .code {
-    display: block;
-    width: 55vw;
+  pre.code {
+    overflow-x:auto;
+    overflow-y:auto;
     height: 35vh;
-    overflow: scroll;
-    overflow-x:visible;
-    overflow-y:visible;
-    padding: 0;
-    float: left;
-    letter-spacing: 0.5px;
-    moz-user-select: all;
-    -khtml-user-select: all;
-    -webkit-user-select: text;
-    -ms-user-select: all;
-    user-select: all;
-    tab-index: -1;
+
+
+    code {
+      display: block;
+      overflow: scroll;
+      overflow-x:hidden;
+      overflow-y: hidden;
+      width: 55vw;
+      padding: 0;
+      letter-spacing: 0.5px;
+      moz-user-select: all;
+      -khtml-user-select: all;
+      -webkit-user-select: text;
+      -ms-user-select: all;
+      user-select: all;
+      tab-index: -1;
+    }
   }
+
+  .codePart {
+    margin-left: 2vh;
+    float: left;
+  }
+
+/*
+
+Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #F0F0F0;
 }
 
-/**
- * GitHub theme
- *
- * @author Craig Campbell
- * @version 1.0.4
- */
-pre {
-  border: 1px solid #ccc;
-  word-wrap: break-word;
-  padding: 6px 10px;
-  line-height: 19px;
-  margin-bottom: 20px;
+
+/* Base color: saturation 0; */
+
+.hljs,
+.hljs-subst {
+  color: #444;
 }
 
-code {
-  border: 1px solid #eaeaea;
-  margin: 0px 2px;
-  padding: 0px 5px;
-  font-size: 12px;
+.hljs-comment {
+  color: #888888;
 }
 
-pre code {
-  border: 0px;
-  padding: 0px;
-  margin: 0px;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
-  border-radius: 0px;
-}
-
-pre, code {
-  font-family: Consolas, 'Liberation Mono', Courier, monospace;
-  color: #333;
-  background: #f8f8f8;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-pre, pre code {
-  font-size: 13px;
-}
-
-pre .comment {
-  color: #998;
-}
-
-pre .support {
-  color: #0086B3;
-}
-
-pre .tag, pre .tag-name {
-  color: navy;
-}
-
-pre .keyword, pre .css-property, pre .vendor-prefix, pre .sass, pre .class, pre .id, pre .css-value, pre .entity.function, pre .storage.function {
+.hljs-keyword,
+.hljs-attribute,
+.hljs-selector-tag,
+.hljs-meta-keyword,
+.hljs-doctag,
+.hljs-name {
   font-weight: bold;
 }
 
-pre .css-property, pre .css-value, pre .vendor-prefix, pre .support.namespace {
-  color: #333;
+
+/* User color: hue: 0 */
+
+.hljs-type,
+.hljs-string,
+.hljs-number,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-quote,
+.hljs-template-tag,
+.hljs-deletion {
+  color: #880000;
 }
 
-pre .constant.numeric, pre .keyword.unit, pre .hex-color {
-  font-weight: normal;
-  color: #099;
+.hljs-title,
+.hljs-section {
+  color: #880000;
+  font-weight: bold;
 }
 
-pre .entity.class {
-  color: #458;
+.hljs-regexp,
+.hljs-symbol,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #BC6060;
 }
 
-pre .entity.id, pre .entity.function {
-  color: #900;
+
+/* Language color: hue: 90; */
+
+.hljs-literal {
+  color: #78A960;
 }
 
-pre .attribute, pre .variable {
-  color: teal;
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code,
+.hljs-addition {
+  color: #397300;
 }
 
-pre .string, pre .support.value  {
-  font-weight: normal;
-  color: #d14;
+
+/* Meta color: hue: 200 */
+
+.hljs-meta {
+  color: #1f7199;
 }
 
-pre .regexp {
-  color: #009926;
+.hljs-meta-string {
+  color: #4d99bf;
+}
+
+
+/* Misc effects */
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+
+  .highlightedCode {
+    background-color: purple;
+  }
 }
