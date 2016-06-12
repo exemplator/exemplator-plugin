@@ -98,73 +98,90 @@
 }
 
 /**
- * GitHub Gist Theme
- * Author : Louis Barranqueiro - https://github.com/LouisBarranqueiro
+ * GitHub theme
+ *
+ * @author Craig Campbell
+ * @version 1.0.4
  */
-
-.hljs {
-  display: block;
-  background: white;
-  padding: 0.5em;
-  color: #333333;
-  overflow-x: auto;
+pre {
+  border: 1px solid #ccc;
+  word-wrap: break-word;
+  padding: 6px 10px;
+  line-height: 19px;
+  margin-bottom: 20px;
 }
 
-.hljs-comment,
-.hljs-meta {
-  color: #969896;
+code {
+  border: 1px solid #eaeaea;
+  margin: 0px 2px;
+  padding: 0px 5px;
+  font-size: 12px;
 }
 
-.hljs-string,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-strong,
-.hljs-emphasis,
-.hljs-quote {
-  color: #df5000;
+pre code {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
 }
 
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-type {
-  color: #a71d5d;
+pre, code {
+  font-family: Consolas, 'Liberation Mono', Courier, monospace;
+  color: #333;
+  background: #f8f8f8;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 
-.hljs-literal,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-attribute {
-  color: #0086b3;
+pre, pre code {
+  font-size: 13px;
 }
 
-.hljs-section,
-.hljs-name {
-  color: #63a35c;
+pre .comment {
+  color: #998;
 }
 
-.hljs-tag {
-  color: #333333;
+pre .support {
+  color: #0086B3;
 }
 
-.hljs-title,
-.hljs-attr,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-selector-attr,
-.hljs-selector-pseudo {
-  color: #795da3;
+pre .tag, pre .tag-name {
+  color: navy;
 }
 
-.hljs-addition {
-  color: #55a532;
-  background-color: #eaffea;
+pre .keyword, pre .css-property, pre .vendor-prefix, pre .sass, pre .class, pre .id, pre .css-value, pre .entity.function, pre .storage.function {
+  font-weight: bold;
 }
 
-.hljs-deletion {
-  color: #bd2c00;
-  background-color: #ffecec;
+pre .css-property, pre .css-value, pre .vendor-prefix, pre .support.namespace {
+  color: #333;
 }
 
-.hljs-link {
-  text-decoration: underline;
+pre .constant.numeric, pre .keyword.unit, pre .hex-color {
+  font-weight: normal;
+  color: #099;
+}
+
+pre .entity.class {
+  color: #458;
+}
+
+pre .entity.id, pre .entity.function {
+  color: #900;
+}
+
+pre .attribute, pre .variable {
+  color: teal;
+}
+
+pre .string, pre .support.value  {
+  font-weight: normal;
+  color: #d14;
+}
+
+pre .regexp {
+  color: #009926;
 }
