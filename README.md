@@ -12,8 +12,8 @@ You can also access Exemplator on the web, [here](https://exemplator.xyz).
 ### Usage
 
 Inside Atom:
-- To toggle the example view with ```Shift + Alt + T```  
-- To find usage examples of a method put the cursor on the desired method and do ```Shift + Alt + E```
+- Toggle the example view with ```Shift + Alt + T```  
+- To find usage examples of a method either select the method or put the cursor on the method and do ```Shift + Alt + E```
 
 Alternatively you can do the same thing through the Exemplator menu.
 
