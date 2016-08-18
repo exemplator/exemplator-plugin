@@ -1,5 +1,5 @@
 {
-  "name": "Exemplator",
+  "name": "exemplator-plugin",
   "main": "./lib/exemplator-plugin",
   "version": "1.0.0",
   "description": "An atom plugin for Exemplator",
