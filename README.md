@@ -1,5 +1,5 @@
 # Exemplator Plugin
-[![apm](https://img.shields.io/apm/v/badges.svg)](https://atom.io/packages/exemplator-plugin)
+[![apm](https://img.shields.io/apm/v/vim-mode.svg?maxAge=2592000)](https://atom.io/packages/exemplator-plugin)
 
 An [Atom](https://atom.io/) plugin for Exemplator. Find usage examples of your favourite, ambiguous Java methods right inside atom.
 
