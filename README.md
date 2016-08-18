@@ -3,6 +3,8 @@
 
 An [Atom](https://atom.io/) plugin for Exemplator. Find usage examples of your favourite, ambiguous Java methods right inside atom.
 
+![](https://github.com/exemplator/exemplator-plugin/blob/readme/pictures/exemplator-plugin.png?raw=true)
+
 For more information take a look at the [exemplator](https://github.com/exemplator/exemplator) repository.
 
 You can also access Exemplator on the web, [here](https://exemplator.xyz).
