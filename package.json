@@ -2,7 +2,7 @@
   "name": "exemplator-plugin",
   "main": "./lib/exemplator-plugin",
   "version": "0.6.2",
-  "description": "An atom plugin for Exemplator",
+  "description": "An Atom plugin for Exemplator",
   "keywords": [
     "java",
     "coding",
