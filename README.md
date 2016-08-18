@@ -7,7 +7,7 @@ An [Atom](https://atom.io/) plugin for Exemplator. Find usage examples of your f
 
 For more information take a look at the [exemplator](https://github.com/exemplator/exemplator) repository.
 
-You can also access Exemplator on the web, [here](https://exemplator.xyz).
+You can also access Exemplator on the web, [here](http://exemplator.xyz).
 
 ### Usage
 
